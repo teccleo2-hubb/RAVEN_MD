@@ -1,0 +1,47 @@
+{
+  "name": "RAVEN-MD",
+  "description": "A powerful WhatsApp bot built with Baileys.",
+  "repository": "https://github.com/your-username/RAVEN-MD",
+  "logo": "https://i.ibb.co/Q4QCHYd/copilot-image-1739572393172.jpg",
+  "keywords": ["whatsapp", "bot", "baileys", "raven-md"],
+  "env": {
+    "PREFIX": {
+      "description": "The prefix for the bot commands.",
+      "value": "."
+    },
+    "MODE": {
+      "description": "The mode of the bot (public/private).",
+      "value": "public"
+    },
+    "OWNERNUMBER": {
+      "description": "The phone number of the bot owner.",
+      "value": "254758301051"
+    },
+    "BOTNAME": {
+      "description": "The name of the bot.",
+      "value": "RAVEN-MD"
+    },
+    "ALWAYSONLINE": {
+      "description": "Keep the bot online 24/7.",
+      "value": "ON"
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ]
+}
